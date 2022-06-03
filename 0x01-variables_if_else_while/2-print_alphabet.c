@@ -5,8 +5,6 @@
 /**
  * main - Entry point
  *
- * print small letter
- *
  * Return: Always 0 (Success)
  */
 
