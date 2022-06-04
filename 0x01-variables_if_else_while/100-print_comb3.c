@@ -15,14 +15,21 @@ int main(void)
 	{
 	for (j = 0; j <= 0; ++j)
 	{
+	  /**
+	   * if (i >= j)
+	   *	{
+	   *		continue;
+	   *	}
+	   */
+		putchar(i);
+		putchar(j);
+		putchar(',');
+		putchar(' ');
 		if (i >= j)
 		{
 			continue;
 		}
-			putchar(i);
-			putchar(j);
-			putchar(',');
-			putchar(' ');
+
 	}
 	}
 	putchar('\n');
