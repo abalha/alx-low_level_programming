@@ -6,14 +6,14 @@
  *
  * program start run from here
  *
- * return: 0 (success)
+ * Return: always 0 (success)
  */
 
 int main(void)
 {
-int i;
-int j;
-int k;
+	int i;
+	int j;
+	int k;
 
 	for (i = '0'; i <= '9'; ++i)
 	{
@@ -27,7 +27,7 @@ int k;
 					putchar(j);
 					putchar(k);
 
-				if (i == 7 && j == 8 && k == 9)
+				if (i == '7' && j == '8' && k == '9')
 				continue;
 				putchar (',');
 				putchar (' ');
