@@ -10,7 +10,7 @@ int main(void)
 int count;
 char arr[8] = "_putchar";
 
-	for (count = 0; count < 9; ++count)
+	for (count = 0; count <= 8; count++)
 	{
 		_putchar(arr[count]);
 	}
