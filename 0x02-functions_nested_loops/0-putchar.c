@@ -8,9 +8,9 @@
 int main(void)
 {
 int count;
-char arr[9];
+char arr[8] = "_putchar";
 
-	for (count = 0; count <= 9; ++count)
+	for (count = 0; count < 9; ++count)
 	{
 		_putchar(arr[count]);
 		_putchar('\n');
