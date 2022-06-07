@@ -13,7 +13,7 @@ char arr[9];
 	for (count = 0; count <= 9; ++count)
 	{
 		_putchar(arr[count]);
-		_putchar('/n');
+		_putchar('\n');
 	}
 
 	return (0);
