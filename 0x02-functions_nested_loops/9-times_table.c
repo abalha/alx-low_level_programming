@@ -6,11 +6,11 @@
  */
 void times_table(void)
 {
-	int num1;
-	int num2;
+	int numb1;
+	int numb2;
 	int res;
 
-	for (num1 = 0; numb1 <= 9; ++numb1)
+	for (numb1 = 0; numb1 <= 9; ++numb1)
 	{
 		for (numb2 = 0; numb2 <= 9; ++numb2)
 		{
