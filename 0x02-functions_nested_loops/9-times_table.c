@@ -15,7 +15,7 @@ void times_table(void)
 		for (numb2 = 0; numb2 <= 9; ++numb2)
 		{
 			res = numb1 * numb2;
-			_putchar(res + '0');
+			_putchar((res%10) + '0');
 			_putchar(',');
 			_putchar(' ');
 			if (numb2 == 9)
