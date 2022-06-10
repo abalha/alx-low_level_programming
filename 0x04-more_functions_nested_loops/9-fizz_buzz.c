@@ -1,8 +1,4 @@
-
-
-
-
-77;30500;0c#include <stdio.h>
+#include <stdio.h>
 
 /**
  * main - Prints the numbers from 1-100, print fizz for multiples of three,
