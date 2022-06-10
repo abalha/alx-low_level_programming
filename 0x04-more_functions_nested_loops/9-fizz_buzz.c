@@ -1,4 +1,8 @@
-#include <stdio.h>
+
+
+
+
+77;30500;0c#include <stdio.h>
 
 /**
  * main - Prints the numbers from 1-100, print fizz for multiples of three,
@@ -12,7 +16,7 @@ int main(void)
 {
 	int num;
 
-	for (num = 1; num <= 100; ++num)
+	for (num = 1; num < 100; ++num)
 	{
 		if ((num % 3) == 0)
 			printf("Fizz ");
