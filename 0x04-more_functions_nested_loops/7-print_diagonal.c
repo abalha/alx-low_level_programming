@@ -15,7 +15,7 @@ void print_diagonal(int size)
 				_putchar(' ');
 			_putchar('\\');
 
-			if (len == size - 1)
+			if (row == size - 1)
 				continue;
 
 			_putchar('\n');
