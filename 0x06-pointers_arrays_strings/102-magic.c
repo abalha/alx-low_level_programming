@@ -1,9 +1,4 @@
 #include <stdio.h>
-/**
- * main - function which print 98
- *
- * Return: if successful return 0
- */
 
 int main(void)
 {
