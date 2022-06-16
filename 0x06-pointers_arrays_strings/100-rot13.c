@@ -12,12 +12,11 @@ char *rot13(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-
-	for (n = 0; a[n] != '\0'; n++)
+	for (n = 0; arr1[n] != '\0'; n++)
 	{
-	if (s[i] == a[n])
+	if (s[i] == arr1[n])
 	{
-		s[i] = b[n];
+		s[i] = arr2[n];
 		break;
 	}
 	}
