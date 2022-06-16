@@ -1,27 +1,34 @@
 #include "main.h"
 /**
- * _strncat - Funtion that concatenates string.
- * @dest: Destiny value.
- * @src: String value.
+ * _strncat - function to concatenate string.
+ * @dest: Destination value.
+ * @src: original string  .
  * @n: Number bytes.
  * Return: dest.
 */
+
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, src_lnt, dest_lnt;
+	int i;
+	int dest_val = 0;
+	int src_val = 0;
 
-	src_lnt = 0;
 	for (i = 0; src[i] != '\0'; i++)
-		src_lnt++;
-	dest_lnt = 0;
+	{
+		src_val++;
+	}
 	for (i = 0; dest[i] != '\0'; i++)
-		dest_lnt++;
-	if (n > src_lnt)
-		n = src_lnt;
-
+	{
+		dest_val++;
+	}
+	if (n > src_val)
+	{
+		n = src_val;
+	}
 	for (i = 0; i < n; i++)
-		dest[dest_lnt + i] = src[i];
-		dest[dest_lnt + i] = '\0';
-
+	{
+		dest[dest_val + i] = src[i];
+		dest[dest_val + i] = '\0';
+	}
 	return (dest);
 }
