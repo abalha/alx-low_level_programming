@@ -1,4 +1,6 @@
+#include <stdio.h>
 #include "main.h"
+
 /**
  * print_chessboard - Prints the chessboard.
  * @a: Array position
