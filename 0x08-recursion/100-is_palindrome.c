@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * is_palindrome - find a palindrome string
+ * _strlen_recursion - find a palindrome string
  * @s: string for check
  *
  * Return: 1 if is palindrome, otherwise 0
