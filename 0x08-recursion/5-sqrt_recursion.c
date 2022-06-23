@@ -1,32 +1,36 @@
 #include "main.h"
+
 /**
-  * _sqrt_recursion - function that calculates the sqrt of a number
-  * @n: number to be calculated
-  * Return: sqrt of number
-  */
+ * sqrt_check - Find the square root
+ * @n: Number to find square root of
+ * @c: The number checked to see if it's the sqrt of n
+ *
+ * Return: The square root value
+ */
+int sqrt_check(int n, int c)
+{
+	if (c * c == n)
+	{
+		return (c);
+	}
+	else if (c >= n / 2)
+		return (-1);
+	return (sqrt_check(n, c + 1));
+}
+
+/**
+ * _sqrt_recursion - Find the square root of given number
+ * @n: Number given to find root of
+ *
+ * Return: The square root or -1 if there is no natural square root
+ */
 int _sqrt_recursion(int n)
 {
-
-	return (find_sqrt(0, n));
-
-}
-/**
-  * find_sqrt - Calculates the sqrt of a number
-  * @num: scale
-  * @base: number to check
-  * Return: -1.
-  */
-
-int find_sqrt(int num, int base)
-{
-
-	if (num * num == base)
-		return (i);
-	else if (num < base)
-		{
-		return (find_sqrt(num + 1, base));
-		}
-	else
+	if (n == 1)
+		return (1);
+	else if (n < 0)
 		return (-1);
-
+	else if (n == 0)
+		return (0);
+	return (sqrt_check(n, 1));
 }
