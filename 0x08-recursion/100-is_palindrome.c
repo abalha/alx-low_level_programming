@@ -7,11 +7,28 @@
  */
 int is_palindrome(char *s)
 {
-	int i;
+	char *ptr, *rev;
 
-	i = 0;
-
-	if (*s == i)
-		return (0);
-	return (1);
+	ptr = s;
+	while (*ptr != '\0')
+	{
+		++ptr;
+	}
+	--ptr;
+	for (rev = s; ptr >= rev;)
+	{
+		if (*ptr == *rev)
+	{
+		--ptr;
+		rev++;
+	}
+	else
+		break;
+	}
+	if (rev > ptr)
+	{
+		return (1);
+	}
+	else
+	return (0);
 }
