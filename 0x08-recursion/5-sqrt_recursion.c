@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * sqrt_check - Find the square root
+ * sqrt_check - Find the square root of number
  * @n: Number to find square root of
  * @c: The number checked to see if it's the sqrt of n
  *
