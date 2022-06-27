@@ -2,41 +2,34 @@
 #include "main.h"
 
 /**
- * str_concat - a function that concatenates two strings
- * @s1: pointer argument one
- * @s2: pointer argument two
- * Return: A returned pointer tha points to a newly allocated space in memory
- * which contains in the contents of s1, followed by the contents of s2, and
- * null terminated, otherwise return NULL on failure.
+ * str_concat - concatenate strings
+ * @s1: string 1
+ * @s2: string 2
+ * Return: NULL if failure
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	int n1, n2, n3 = 0;
-	char *ptr = NULL;
+	char *s;
+	int a, b, c, d;
 
-	if (s1 == NULL)
+	if (s1 == 0)
 		s1 = "";
-	if (s2 == NULL)
+	if (s2 == 0)
 		s2 = "";
-
-	for (n1 = 0; s1[n1]; n1++)
+	for (a = 0; s1[a] != '\0'; a++)
 		;
-
-	for (n2 = 0; s2[n2]; n2++)
+	for (b = 0; s2[b] != '\0'; b++)
 		;
-
-	ptr = malloc(sizeof(char) * (n1 + n2 + 1));
-	if (ptr == NULL)
+	b++;
+	s = malloc(a * sizeof(*s1) + b * sizeof(*s2));
+	if (s == 0)
 		return (NULL);
-
-	for (n3 = 0; s1 && s1[n3]; n3++)
-		ptr[n3] = s1[n3];
-	ptr[n3] = '\0';
-
-	for (n3 = 0; s2 && s2[n3]; ne++)
-		ptr[n1 + n3] = s2[n3];
-	ptr[n1 + n3] = '\0';
-
-	return (ptr);
+	for (c = 0, d = 0; c < a + b; c++)
+	{
+		if (c < a)
+			s[c] = s1[c];
+		else
+			s[c] = s2[d++];
+	}
+	return (s);
 }
