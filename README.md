@@ -1,1 +1,1 @@
-all files
+def struct
